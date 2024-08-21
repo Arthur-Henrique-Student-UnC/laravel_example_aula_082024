@@ -27,3 +27,5 @@ Route::prefix('admin')->group(function(){
     Route::get('/admin', [\App\Http\Controllers\SiteController::class, 'admin']);
 });
 
+Route::get('/teste/{p1}/{p2}', [App\Http\Controllers\parametros::class, 'passandoParametros']);
+
